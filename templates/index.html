@@ -1,0 +1,512 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gayrat</title>
+    
+    <!-- Links -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'color1.css' %}">
+    <link rel="stylesheet" href="{% static 'js/app.js' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'img/gdbg.png' %}">
+    <!-- JQuery Link -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <!-- JQuery Link end -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style-switcher.css' %}">
+    <link rel="stylesheet" href="{% static 'css/color1.css' %}" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="{% static 'css/color2.css' %}" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="{% static 'css/color3.css' %}" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="{% static 'css/color4.css' %}" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="{% static 'css/color5.css' %}" class="alternate-style" title="color-5" disabled>
+
+</head>
+<body>
+
+    <!-- main container -->
+
+    <div class="main-container">
+        <!-- aside -->
+        <div class="aside">
+            <div class="logo">
+                <a href="#"><span>Gayrat</span></a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user" ></i>About</a></li>
+                <li><a href="#service"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>
+        </div>
+        <!-- aside end -->
+        <!-- ######################### -->
+        <!-- main content-->
+        <div class="main-content">
+            <!-- home section -->
+            <section class="home active section " id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">
+                                Hello, I'm <span class="name about-first-line"></span>
+                            </h3>
+                            <h3 class="my-profession">I'm a <span class="typing"></span></h3>
+                            <p class="about-second-line"></p>
+                            <a href="{%url 'download' %}" class="btn">Dowloand CV</a>
+                        </div>
+                        <div class="home-img padd-15">
+                            <!-- <img src="{% static 'img/rasm.jpg' %}" alt="Home image"> -->
+                            <img src="" alt="Img" class="about-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- home section end-->
+            
+            <!-- about section -->
+
+            <section class="about section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>I'am Gayrat and <span>Web Developer</span></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Repudiandae placeat iure nulla aperiam officiis modi quod exercitationem 
+                                        ipsam ipsum ad ab eveniet facere libero nam repellat adipisci laborum
+                                        corrupti mollitia cum, nobis voluptatum, aliquid eaque 
+                                        voluptatem officia? Sint quis nesciunt fugiat neque! Est, voluptas. 
+                                        Veniam aliquam eos nisi officiis expedita.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>Birthday : <span>20 oct 2003</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Age : <span>19</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Website : <span>www.Domain.uz</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Email : <span>gayratse@gmail.com</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Degree : <span>Bachelor's</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Phone : <span>+998997707574</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>City : <span>Tashkent</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Freelance  : <span>Available</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="#contact" data-section-index="1" class="btn hire-me"> Hire Me </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill-item padd-15">
+                                            <h5>Python</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 76%;"></div>
+                                                <div class="skill-percent">76%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Django</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 86%;"></div>
+                                                <div class="skill-percent">86%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>HTML/CSS</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 90%;"></div>
+                                                <div class="skill-percent">90%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>JavaScript</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 80%;"></div>
+                                                <div class="skill-percent">80%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Education</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- timeline Item -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>2019-2021
+                                                    </h3>
+                                                    <h4 class="timeline-title">secondary specialized school</h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                        Harum et ab enim saepe! Est aut deleniti dolorum iste! Architecto, 
+                                                        beatae totam maiores aperiam est nisi illo? Inventore aperiam quas autem.</p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>2021-Present
+                                                    </h3>
+                                                    <h4 class="timeline-title">bachelor's</h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                        Harum et ab enim saepe! Est aut deleniti dolorum iste! Architecto, 
+                                                        beatae totam maiores aperiam est nisi illo? Inventore aperiam quas autem.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="experience padd-15">
+                                    <h3 class="title">Experience</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- timeline Item -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>2019-2021
+                                                    </h3>
+                                                    <h4 class="timeline-title">secondary specialized school</h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                        Harum et ab enim saepe! Est aut deleniti dolorum iste! Architecto, 
+                                                        beatae totam maiores aperiam est nisi illo? Inventore aperiam quas autem.</p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>2021-Present
+                                                    </h3>
+                                                    <h4 class="timeline-title">bachelor's</h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                        Harum et ab enim saepe! Est aut deleniti dolorum iste! Architecto, 
+                                                        beatae totam maiores aperiam est nisi illo? Inventore aperiam quas autem.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- about section end-->
+            <!-- Service Section  -->
+            <section class="service section " id="service">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- service item -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h4>Web development</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Architecto vero magni perspiciatis, 
+                                    cupiditate illo corporis!4</p>
+                            </div>
+                        </div>
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h4>Web development</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Architecto vero magni perspiciatis, 
+                                    cupiditate illo corporis!4</p>
+                            </div>
+                        </div>
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4>Web development</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Architecto vero magni perspiciatis, 
+                                    cupiditate illo corporis!4</p>
+                            </div>
+                        </div>
+                        <!-- item end -->
+                    </div>
+                </div>
+            </section>
+            <!-- service section end -->
+            <!-- portfolio section -->
+            <section class="portfolio section " id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>My Last projects :</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <!-- portfolio item start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                               <a href="{{project.url}}" target="_blank">  
+                                    <div class="portfolio-img">
+                                        <img src="{{ project.image.url }}" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- portfolio item end -->
+                        {% comment %} <!-- portfolio item start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/blog.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item end -->
+                        <!-- portfolio item start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/first.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item end -->
+                         <!-- portfolio item start -->
+                         <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/first.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item end -->
+                        <!-- portfolio item start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/blog.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item end -->
+                        <!-- portfolio item start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/first.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- portfolio item end --> {% endcomment %}
+                    </div>
+                </div>
+            </section>
+            <!-- portfolio section end-->
+            <!-- Contact section start-->
+
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">Have You Any Question ?</h3>
+                    <h4 class="contact-sub-title padd-15">I'm At Your Services</h4>
+                    <div class="row">
+                        <!-- Contact item start -->
+                        <div class="contact-info-item">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Call Me On</h4>
+                            <p>+9998997707574</p>
+                        </div>
+                        <!-- Contact item end -->
+                        <!-- Contact item start -->
+                        <div class="contact-info-item">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>Email</h4>
+                            <p>gayratse@gmail.com</p>
+                        </div>
+                        <!-- Contact item end -->
+                        <!-- Contact item start -->
+                        <div class="contact-info-item">
+                            <div class="icon"><i class="fa fa-globe"></i></div>
+                            <h4>Website</h4>
+                            <p>www.domain.uz</p>
+                        </div>
+                        <!-- Contact item end -->
+                    </div>
+                    <h3 class="contact-title padd-15">Send Me An Email</h3>
+                    <h4 class="contact-sub-title padd-15">I'm Very responsive To Messages</h4>
+                    <!-- Contact Form -->
+                    <form action="" id="myForm" method="post">{%csrf_token%}
+                        <div class="row">
+                        
+                            <div class="contact-form padd-15">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="name" class="form-control" name="" id="name" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="" id="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject" name="" >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="" id="body" cols="30" rows="10" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="submit" class="btn" placeholder="Submit" name="" id="submit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div> 
+                    </form> 
+                </div>
+            </section>
+            <!-- Contact section end-->
+
+        </div>
+        <!-- main content end -->
+    </div>
+    <!-- main container end -->
+    <!-- style swicher -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fa fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fa"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+
+        </div>
+    </div>
+    <!-- style switcher end -->
+    <!-- JS Codes -->
+    <script>
+        $.ajax({
+            type: 'GET',
+            url: 'api/about/',
+            success: function(data){
+                const addEl = () => {
+                    const title = document.getElementsByClassName('about-first-line');
+                    $(title[0]).text(data[0].title);
+    
+                    const description = document.getElementsByClassName('about-second-line');
+                    $(description[0]).text(data[0].description);
+    
+                    const image = document.getElementsByClassName('about-image');
+                    $(image[0]).attr('src', data[0].image);
+                };
+                addEl();
+            }
+        })
+    </script>
+    <!-- contact scripts -->
+    <script type="text/javascript"> 
+        $(document).on('submit', '#myForm', function(event){
+            event.preventDefault();
+            
+            $.ajax({
+                url: "api/contact/",
+                type: "POST",
+                data: {
+                    name:$('#name').val(),
+                    email:$('#email').val(),
+                    subject:$('#subject').val(),
+                    message:$('#body').val(),
+                    csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val()
+                },
+                success: function(data){
+                    $('#myForm')[0].reset();
+                    alert("Your message has been sent");
+                }
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    
+    <script src="{% static 'js/app.js' %}"> </script>
+    <script src="{% static 'js/switcher.js' %}"></script>
+    
+</body>
+</html>
+
+
